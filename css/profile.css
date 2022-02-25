@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Raleway:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Nunito:wght@200&family=Raleway:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&family=Nunito:wght@200&family=Raleway:ital,wght@0,100;1,100&family=Ubuntu:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+body {
+    /* background: -webkit-linear-gradient(left, #3931af, #00c6ff); */
+    margin: 0;
+    font-family: "comfortaa", sans-serif;
+  }
+
+ p {
+     padding: 20px 10px;
+ }
+/* .card {
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 110%;
+    
+} */
+
+.card-text--espacio {
+    
+    
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #0ab6fa;
+    transform: scaleY(1);
+    transition: all 0.3s;
+    transform-origin: bottom
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #8E24AA;
+    transform: scaleY(0);
+    transition: all 0.5s;
+    transform-origin: bottom
+    
+}
+
+.card:hover::after {
+    transform: scaleY(1)
+}
+
+.fonts {
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.social-list li {
+    padding: 10px;
+    color: #751add;
+    font-size: 19px;
+    cursor: pointer;
+    
+}
+
+.buttons button:nth-child(1) {
+    border: 1px solid #135fd3 !important;
+    color:#135fd3 ;
+    height: 40px
+}
+
+.buttons button:nth-child(1):hover {
+    border: 1px solid  #751add !important;
+    color: #fff;
+    height: 40px;
+    background-color: #751add;
+}
+
+.buttons button:nth-child(2) {
+    border: 1px solid #751add !important;
+    background-color:  #751add;
+    color: #fff;
+    height: 40px
+}
+
+.card__borde--redes {
+    background-color: #f7f3f3;
+    padding: 0px 1px 0px 1px;
+    margin: 5px 5px 5px 5px;
+    width: 30px;    
+}
+
+.card__borde--proyectos {
+    background-color: #f2f4f8;
+    padding: 0px 1px 0px 1px;
+    margin: 5px 5px 5px 5px;
+    width: 30px;    
+}
+.card__borde--proyectos:hover {
+    cursor: pointer;   
+    box-shadow: 0px 0px 5px 0px #08B1DB;
+    border: 1px solid #e4eaec; 
+}   
+
+
+.card__borde--redes:hover {
+    cursor: pointer;   
+    box-shadow: 0px 5px 0px 0px #08B1DB;
+    /* border: 1px solid #91afbb; */
+}
+
+.card__borde {
+    background-color: #f7f3f3;
+    padding: 0px 1px 0px 1px;
+    margin: 5px 5px 5px 5px;
+    width: 30px;    
+}
+.card__borde:hover {
+    box-shadow: 3px 4px 8px 0px #7E8182;
+    border: 1px solid #91afbb;
+    cursor: pointer;
+}
+
+.card-img--size {
+    width: 250px;
+    height: 200px;
+    padding: 5px 35px 10px 35px;   
+    
+}
+
+.footer_copy {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.text-center--color {
+background-color: #91afbb;
+color: black;
+}
+.footer--color {
+    color: rgb(40, 51, 58);
+}
